@@ -8,7 +8,7 @@ public class Test2 {
 		r.setLengh(4); // invoke a method
 //		r.width = 2;
 		r.setWidth(2);
-		
+
 		System.out.println(r.getArea());
 
 	}
