@@ -19,6 +19,12 @@ public class Box {
 	}
 
 	// CTOR 2
+	/**
+	 * This CTOR creates a cube with length, width and height initialized to the
+	 * specified val parameter
+	 * 
+	 * @param val the specified of this cube dimentions
+	 */
 	public Box(int val) {
 		setLength(val);
 		setWidth(val);
