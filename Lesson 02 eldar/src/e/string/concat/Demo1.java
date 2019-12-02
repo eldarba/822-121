@@ -14,6 +14,5 @@ public class Demo1 {
 		int b = 11;
 
 		System.out.println(a + " + " + b + " = " + (a + b));
-		System.out.println(a + " + " + b + " = " + (a + b));
 	}
 }
