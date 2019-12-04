@@ -17,6 +17,11 @@ public class Demo2 {
 		// print the user input
 		System.out.println(x);
 		sc.close();
+
+		// if x is bigger than 100 - print BIG
+		if (x > 100) {
+			System.out.println("BIG");
+		}
 	}
 
 }
