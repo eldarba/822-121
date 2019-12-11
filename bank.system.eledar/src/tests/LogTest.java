@@ -13,8 +13,8 @@ public class LogTest {
 		Log log2 = new Log(1500, 102, "test2", 35.8F);
 
 		// print details of log1
-		String str = log1.getData();
-		System.out.println(str);
+		String meh = log1.getData();
+		System.out.println(meh);
 
 		// print details of log2
 		System.out.println(log2.getData());
