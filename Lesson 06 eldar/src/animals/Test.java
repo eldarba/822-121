@@ -12,7 +12,7 @@ public class Test {
 		
 		animals[0] = new Cat();
 		animals[1] = new Cat();
-		animals[2] = new Cat();
+		animals[2] = new Crow();
 		animals[3] = new Dog();
 		animals[4] = new Dog();
 		animals[5] = new Cow();
@@ -20,6 +20,14 @@ public class Test {
 		
 		for (int i = 0; i < animals.length; i++) {
 			animals[i].speak();
+//			animals[i].fly();
+			if(animals[i] instanceof Crow) {
+				// casting from Animal reference to Crow reference 
+				Crow crow = (Crow)animals[i];
+				// now we can call the fly() method
+				crow.fly();
+			}
+			System.out.println("=================");
 		}
 		
 	}

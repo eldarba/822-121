@@ -24,4 +24,38 @@ public class Person extends Object {
 		this(-1); // calling CTOR B
 	}
 
+	@Override
+	public String toString() {
+		return "Person[id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (!(obj instanceof Person)) {
+			return false;
+		}
+
+		Person other = (Person) obj;
+		return this.id == other.id;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 }
