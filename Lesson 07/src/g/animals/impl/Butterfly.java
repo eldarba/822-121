@@ -1,12 +1,18 @@
 package g.animals.impl;
 
 import g.animals.abst.Insect;
+import g.animals.interfaces.Flyer;
 
-public class Butterfly extends Insect {
+public class Butterfly extends Insect implements Flyer {
 
 	@Override
 	public void speak() {
 		System.out.println("speak like a butterfly");
+	}
+	
+	@Override
+	public void fly() {
+		System.out.println("fly like a butterfly");
 	}
 
 }

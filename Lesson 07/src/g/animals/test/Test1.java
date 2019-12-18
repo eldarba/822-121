@@ -7,6 +7,7 @@ import g.animals.impl.Butterfly;
 import g.animals.impl.Cat;
 import g.animals.impl.Hawk;
 import g.animals.impl.Ostrich;
+import g.animals.interfaces.Flyer;
 
 public class Test1 {
 	
@@ -24,6 +25,13 @@ public class Test1 {
 		for (int i = 0; i < animals.length; i++) {
 			Animal animal = animals[i];
 			animal.speak();
+			
+			if(animal instanceof Flyer) {
+				Flyer flyer = (Flyer) animal;
+				flyer.fly();
+			}
+			
+			System.out.println("===============");
 		}
 	}
 
